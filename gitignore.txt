@@ -1,0 +1,46 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ---------------------
+# Next.js (fruit_detect/)
+# ---------------------
+
+fruit-detection/node_modules/
+fruit-detection/.pnp/
+fruit-detection/.pnp.*
+fruit-detection/.next/
+fruit-detection/out/
+fruit-detection/build/
+fruit-detection/.env*
+fruit-detection/.vercel/
+fruit-detection/*.tsbuildinfo
+fruit-detection/next-env.d.ts
+
+# Yarn (if using Yarn Workspaces)
+fruit-detection/.yarn/*
+!fruit-detection/.yarn/patches
+!fruit-detection/.yarn/plugins
+!fruit-detection/.yarn/releases
+!fruit-detection/.yarn/versions
+
+# ---------------------
+# Python / Flask (server/)
+# ---------------------
+
+server/venv/
+server/__pycache__/
+server/*.py[cod]
+server/**/*.pt
+**/*.pt
+# ---------------------
+# Common ignores
+# ---------------------
+
+coverage/
+.DS_Store
+*.pem
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
